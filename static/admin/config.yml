@@ -1,0 +1,252 @@
+backend:
+  name: git-gateway
+  repo: GoWeb-Internship/gw-bb-project
+  branch: dev
+media_folder: static/assets
+public_folder: /assets
+slug:
+  encoding: 'ascii'
+  clean_accents: true
+  sanitize_replacement: '-'
+media_library:
+  name: cloudinary
+  output_filename_only: false
+  config:
+    cloud_name: gw-bb-project
+    api_key: 332238787687881
+    default_transformations:
+      - - fetch_format: auto
+          quality: auto
+          crop: scale
+collections:
+  # Main page model
+  - label: 'Главная страница'
+    name: 'page'
+    folder: 'cmsdata/main'
+    slug: '{{fieldIdName}}-{{language}}'
+    create: false # ограничение на создание документа
+    delete: false # ограничение на удаление документа
+    identifier_field: title
+    fields:
+      - {
+          label: 'Group identifier',
+          name: 'fieldIdName',
+          widget: 'hidden',
+          default: 'main',
+        }
+      - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' } # hidden прячет поле в СMS
+      - {
+          label: 'Title',
+          name: 'title',
+          widget: 'hidden',
+          default: 'Main Page',
+        }
+      - { label: 'Update Date', name: 'date', widget: 'datetime' }
+      - { label: 'Charity', name: 'charity', widget: 'string' }
+      - { label: 'Sale', name: 'sale', widget: 'string' }
+      - { label: 'Cost one session with sale', name: 'cost', widget: 'string' }
+  # Content Images
+  - label: 'Контентные изображения'
+    name: 'contentImages'
+    folder: 'cmsdata/images'
+    slug: '{{fieldIdName}}-{{title}}'
+    identifier_field: title
+    create: false
+    delete: false
+    fields:
+      - {
+          label: 'Images identifier',
+          name: 'fieldIdName',
+          widget: 'hidden',
+          default: 'content-image',
+        }
+      - {
+          label: 'Title',
+          name: 'title',
+          widget: 'string',
+          hint:
+            'Для удобства данное поле лучше называть по месту расположения
+            фотографии в секции',
+        }
+      - { label: 'Update Date', name: 'date', widget: 'datetime' }
+      - { label: 'Image', name: 'imageUrl', widget: 'image' }
+      - {
+          label: 'Описание фотографии [UK]',
+          name: 'uk',
+          hint:
+            'Описание фотографии должно отвечать на вопрос "Что изображено на
+            фотографии?',
+        }
+      - { label: 'Описание фотографии [RU]', name: 'ru' }
+      - { label: 'Описание фотографии [EN]', name: 'en' }
+  # Price cards model
+  - label: 'Цены'
+    name: 'pricesCards'
+    folder: 'cmsdata/prices'
+    slug: '{{fieldIdName}}-{{title}}'
+    identifier_field: title
+    create: false
+    delete: false
+    fields:
+      - {
+          label: 'Prices identifier',
+          name: 'fieldIdName',
+          widget: 'hidden',
+          default: 'prices',
+        }
+      - { label: 'Title', name: 'title', widget: 'hidden' }
+      - { label: 'ID', name: 'id', widget: 'hidden' }
+      - { label: 'Update Date', name: 'date', widget: 'datetime' }
+      - {
+          label: 'Рекоммендованный прайс',
+          name: 'recommended',
+          widget: boolean,
+          default: false,
+          hint: 'Центральный пакет услуг, который рекоммендуется к выбору',
+        }
+      - { label: 'Цена, $', name: 'price', widget: 'number' }
+      - { label: 'Скидка, $', name: 'discount', widget: 'number' }
+      - { label: 'Длительность [UK]', name: 'ukMonth', widget: string }
+      - { label: 'Количество сессий [UK]', name: 'ukSessions', widget: string }
+      - { label: 'Длительность [RU]', name: 'ruMonth', widget: string }
+      - { label: 'Количество сессий [RU]', name: 'ruSessions', widget: string }
+      - { label: 'Длительность [EN]', name: 'enMonth', widget: string }
+      - { label: 'Количество сессий [EN]', name: 'enSessions', widget: string }
+  # Stories Model
+  - label: 'Истории клиентов'
+    name: 'stories'
+    folder: 'cmsdata/stories'
+    slug: '{{fieldIdName}}-{{title}}'
+    identifier_field: title
+    create: true
+    delete: true
+    fields:
+      - {
+          label: 'stories identifier',
+          name: 'fieldIdName',
+          widget: 'hidden',
+          default: 'stories',
+        }
+      - {
+          label: 'Update Date',
+          name: 'date',
+          widget: 'datetime',
+          hint:
+            'Истории отображаются на странице в порядке от более нового отзыва
+            до более старого, поэтому можно менять дату, чтобы установить
+            порядок располжения историй',
+        }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Имя [UK]', name: 'ukName', widget: 'string' }
+      - { label: 'История [UK]', name: 'uk', widget: string }
+      - { label: 'Имя [RU]', name: 'ruName', widget: 'string' }
+      - { label: 'История [RU]', name: 'ru', widget: string }
+      - { label: 'Имя [EN]', name: 'enName', widget: 'string' }
+      - { label: 'История [EN]', name: 'en', widget: string }
+  # Feedback Model
+  - label: 'Отзывы клиентов'
+    name: 'feedbacks'
+    folder: 'cmsdata/feedbacks'
+    slug: '{{fieldIdName}}-{{title}}'
+    identifier_field: title
+    create: true
+    delete: true
+    fields:
+      - {
+          label: 'feedbacks identifier',
+          name: 'fieldIdName',
+          widget: 'hidden',
+          default: 'feedbacks',
+        }
+      - {
+          label: 'Update Date',
+          name: 'date',
+          widget: 'datetime',
+          hint:
+            'Отзывы отображаются на странице в порядке от более нового отзыва до
+            более старого, поэтому можно менять дату, чтобы установить порядок
+            располжения отзывов',
+        }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Имя [UK]', name: 'ukName', widget: 'string' }
+      - { label: 'Отзыв [UK]', name: 'uk', widget: 'string' }
+      - { label: 'Имя [RU]', name: 'ruName', widget: 'string' }
+      - { label: 'Отзыв [RU]', name: 'ru', widget: string }
+      - { label: 'Имя [EN]', name: 'enName', widget: 'string' }
+      - { label: 'Отзыв [EN]', name: 'en', widget: 'string' }
+      - {
+          label: 'Фотография',
+          name: 'imageUrl',
+          widget: image,
+          hint: 'Лучше сразу откадрировать в пропорцию 1 к 1 (квадрат)',
+        }
+  # Offer Model
+  - label: 'Публичная оферта'
+    name: 'offer policy'
+    folder: 'cmsdata/offer'
+    slug: '{{fieldIdName}}-{{language}}'
+    create: false # ограничение на создание документа
+    delete: false # ограничение на удаление документа
+    identifier_field: title
+    fields:
+      - {
+          label: 'Offer identifier',
+          name: 'fieldIdName',
+          widget: 'hidden',
+          default: 'offer',
+        }
+      - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' } # hidden прячет поле в СMS
+      - {
+          label: 'Title',
+          name: 'title',
+          widget: 'hidden',
+          default: 'Offer Page',
+        }
+      - { label: 'Update Date', name: 'date', widget: 'datetime' }
+      - { label: 'Offer policy title', name: 'offerTitle', widget: 'string' }
+      - { label: 'Content', name: 'body', widget: 'markdown' }
+  #Policy Model
+  - label: 'Политика конфиденциальности'
+    name: 'policy'
+    folder: 'cmsdata/policy'
+    slug: '{{fieldIdName}}-{{title}}'
+    identifier_field: title
+    create: false # ограничение на создание документа
+    delete: false # ограничение на удаление документа
+    fields:
+      - {
+          label: 'Policy identifier',
+          name: 'fieldIdName',
+          widget: 'hidden',
+          default: 'policy',
+        }
+      - { label: 'Update Date', name: 'date', widget: 'datetime' }
+      - { label: 'Language', name: 'language', widget: 'hidden', default: 'uk' } # hidden прячет поле в СMS
+      - {
+          label: 'Title',
+          name: 'title',
+          widget: 'hidden',
+          default: 'Policy Page',
+        }
+      - { label: 'Policy title', name: 'policyTitle', widget: 'string' }
+      - { label: 'Content', name: 'body', widget: 'markdown' }
+  #Contacts
+  - label: 'Контакты'
+    name: 'contacts'
+    folder: 'cmsdata/contacts'
+    slug: '{{fieldIdName}}'
+    identifier_field: title
+    create: false # ограничение на создание документа
+    delete: false # ограничение на удаление документа
+    fields:
+      - { label: 'Contacts', name: 'title', widget: 'hidden' }
+      - {
+          label: 'contacts identifier',
+          name: 'fieldIdName',
+          widget: 'hidden',
+          default: 'contacts',
+        }
+      - { label: 'Update Date', name: 'date', widget: 'datetime' }
+      - { label: 'Linkedin', name: '1', widget: 'string' }
+      - { label: 'Facebook', name: '2', widget: 'string' }
+      - { label: 'Instagram', name: '3', widget: 'string' }

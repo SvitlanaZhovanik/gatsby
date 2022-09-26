@@ -1,0 +1,244 @@
+{
+  "header": {
+    "nav": [
+      {
+        "name": "About me",
+        "id": "about"
+      },
+      {
+        "name": "Reviews",
+        "id": "reviews"
+      },
+      {
+        "name": "Price",
+        "id": "price"
+      },
+      {
+        "name": "Contacts",
+        "id": "contacts"
+      }
+    ]
+  },
+  "roadMapSection": {
+    "title": "6 easy steps to do it",
+    "list": [
+      "We'll find out your fears and limiting beliefs that're holding you back",
+      "We'll look for your true desires and goals, and not those that're imposed by outside persons or influences",
+      "We'll learn to celebrate the little victories and to move step by step towards the dream",
+      "We'll understand where energy goes, why 24 hours a day is not enough and how to change it",
+      "We'll find out what else you need to get the desired results and where to get it",
+      "We'll write your personal action plan for a year, quarter, month, week, day and start implementing it"
+    ]
+  },
+  "priceSectionTitle": "The cost of the key to a better life",
+  "form": {
+    "inputName": {
+      "name": "Name"
+    },
+    "inputPhone": {
+      "name": "Phone"
+    },
+    "inputEmail": {
+      "name": "Email"
+    },
+    "checkbox": {
+      "text": "I agree to the processing of my ",
+      "policy": "personal data"
+    }
+  },
+  "validation": {
+    "required": "This is a required field",
+    "email": "Enter your email in the format your@email.com",
+    "emailValid": "Can only contain Latin characters and at least 3 characters in front of @",
+    "name": "Name must be at least 1 characters",
+    "toastSuccessful": "Data has been successfully submitted",
+    "toastError": "Something went wrong. Try again later."
+  },
+  "button": {
+    "textBigButton": "Take the first step",
+    "textSmallButton": "Sign up"
+  },
+  "heroExpirience": {
+    "items": [
+      {
+        "id": 1,
+        "title": "15 years",
+        "text": "in international business"
+      },
+      {
+        "id": 2,
+        "title": "500",
+        "text": "hours of practice"
+      },
+      {
+        "id": 3,
+        "title": "6 years",
+        "text": "of work with business managers"
+      },
+      {
+        "id": 4,
+        "title": "7 years",
+        "text": "in sales and startup development"
+      },
+      {
+        "id": 5,
+        "title": "ICF",
+        "text": "life coach since 2021"
+      },
+      {
+        "id": 6,
+        "title": "30+",
+        "text": "satisfied customers"
+      }
+    ]
+  },
+  "heroListBlock": {
+    "title": "We're definitely going the same way, if you",
+    "list": [
+      "You experience fear or anxiety and there is only negativity around (you don't see any light coming out of surrounding darkness)",
+      "You don't want to work or do something, but you have to. Don't get the life you imagined",
+      "You lose concentration, you try to cover everything at once, but you don't get the desired result",
+      "You don't understand what you want and whether these are your desires, you don't know what to do next",
+      "You want to do something that brings pleasure and incom",
+      "You understand that the new day is similar to the previous one, you feel stuck in “groundhog day”"
+    ]
+  },
+  "heroTitle": {
+    "title": "I will teach you",
+    "titleSpan": "to live in high spirits",
+    "subTitle": "without emotional burnouts",
+    "supTitle": "If you are emotionally burnt out",
+    "supTitleSpan": "and don't enjoy your life"
+  },
+  "about": {
+    "title": "Let's get acquainted",
+    "caption": "I know how you feel when:",
+    "text": [
+      "Hello, I'm Yuliya and my motto is - to live it up! I always do what brings me pleasure and fun, I like to discover new cities, countries, continents and I can't stop doing it. For more than 7 years I have been helping start-up companies to develop and optimize their business.",
+      "My goal is to make this world a little better and increase the number of conscious happy people. That's why, since 2021, I decided to devote myself to coaching and use all my experience to help those who are lost and can't see any prospects or don't know where to start.",
+      "Together we will reveal your potential, analyze your desires and determine what slows down you along the way to your goals. And you will definitely get to know what it is to live it up!"
+    ],
+    "items": [
+      "It seems that everyone is more successful and happier",
+      "You are forced to do something you don't like",
+      "You don't live YOUR life",
+      "Life goes by without pleasure",
+      "Time flies, but nothing changes",
+      "Surroundings pull you down"
+    ]
+  },
+  "withCoach": {
+    "title": "Why it is better with a coach",
+    "text": [
+      "I'll do it myself” is a common mistake of people who drive themselves and constantly face burnout…",
+      "Of course, you can do it yourself, if you find the time and energy to study all the necessary information, you will understand what you need, what are the problems and start acting.",
+      "But there is not enough time anyway, and your current knowledge has led to the current situation.",
+      "What for you need to “reinvent the wheel”, waste time, money, energy and to go all the way yourself and, besides, you don't even know whether it will be successful.  Instead, you can call for professional help and achieve results faster and easier. That's what all successful people do!"
+    ]
+  },
+  "importantResultsSection": {
+    "title": "What are your 6 most important results?",
+    "list": [
+      "You'll understand what you really want in life and start moving purposefully towards your desires",
+      "You'll begin to live a conscious and full life paying attention to important things that you previously put off or ignored",
+      "You'll gain courage and self-confidence, you'll begin to do what you couldn'tt decide on before.",
+      "You'll change your attitude towards yourself and the environment, you'll find a positive attitude that will help you to reach a new level of life",
+      "You'll increase your personal efficiency and energy level to move towards your goals",
+      "You'll fill your life with pleasure and incredible accomplishments"
+    ]
+  },
+  "inLive": {
+    "title": "Yuliya about cardinal changes in life",
+    "text": [
+      "With a change in your inner state and a new vision of your life, you'll begin to notice more opportunities, you'll stop fussing and doubting. Life will take on a new trajectory. In this state, there is no place for burnout, because in return comes the pleasure of every step! It's amazing how much we miss out in life.",
+      "If you want to understand what is stopping you from living a happy life while achieving your goals, I will be very happy to help you see how to do it.",
+      "Think that in a few months your life will shine with bright colors and you will begin to get incredible results.",
+      "Don't put off your life for later! People who live a happy life achieve the best results! Do you want to know how?"
+    ]
+  },
+  "beBetterToday": {
+    "title": "Be better today!",
+    "subTitle": "Your new life is waiting for you!",
+    "textSupItems": "The life in which you will",
+    "items": [
+      "Live it up, do every day what brings pleasure",
+      "Fulfill your true dreams, desires and achieve what you have dreamed of for so long",
+      "Meet new and interesting people",
+      "Achieve cool personal results and transform your life beyond recognition",
+      "It will be easier to make decisions and get new impressions of yourself and your life"
+    ],
+    "textSubItems": "Don't waste your time!!! Take a step right now!"
+  },
+  "saving": "Saving",
+  "storiesTitle": "Incredible stories of my clients",
+  "feedbacksTitle": "Feedback from my clients",
+  "modalRight": {
+    "title": "Hi! I'll be in touch with you soon!",
+    "text": "By clicking submit you agree to the processing of personal data"
+  },
+  "modalLeft": {
+    "text": "Sign up with me today for your first coaching session at",
+    "text2": "discount and start living your life tomorrow!"
+  },
+  "guarantee": {
+    "title": "Guarantee",
+    "text": "I guarantee that having figured out with your “I want” and “I need”, “I can” and “I have no energy and time” and acting step by step according to the plan, your new life with pleasure will simply be inevitable"
+  },
+  "myFormula": {
+    "title": "My formula is very simple and effective",
+    "textUnderstand": "Understand what you want",
+    "textHowGet": "Understand how to get it",
+    "textStartDoing": "Start doing!"
+  },
+  "footer": {
+    "navPubl": [
+      {
+        "name": "Privacy policy",
+        "id": "policy"
+      },
+      {
+        "name": "Public offer",
+        "id": "offer"
+      }
+    ],
+    "nav": [
+      {
+        "name": "About me",
+        "id": "about"
+      },
+      {
+        "name": "Price",
+        "id": "price"
+      },
+      {
+        "name": "Reviews",
+        "id": "reviews"
+      }
+    ]
+  },
+  "linkGoBack": "Go back",
+  "phoneError": "Enter phone number",
+  "seo": {
+    "title": "Be better today!",
+    "description": "I will teach you to live in high spirits without emotional burnouts",
+    "lang": "en"
+  },
+  "readMoreBtn": {
+    "more": "Read more",
+    "less": "Hide"
+  },
+  "notFoundPage": {
+    "title": "The page was not found (404)",
+    "button": "Back to the main page",
+    "par": "The requested page was not found",
+    "redirectMsg": "You will be automatically redirected to the home page via",
+    "timer": "seconds",
+    "redirectStatus": "redirecting"
+  },
+  "aria": {
+    "toplink": "to page top",
+    "openMenu": "mobile menu open button",
+    "closeMenu": "mobile menu close button",
+    "langSwitcher": "language switcher button"
+  }
+}

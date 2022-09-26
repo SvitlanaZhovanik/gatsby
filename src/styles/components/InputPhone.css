@@ -1,0 +1,73 @@
+.input-container .input-phone {
+  padding: 16px 20px 16px 92px !important;
+  font-size: 16px !important;
+  line-height: 1.18 !important;
+  border-radius: 10px !important;
+  border: 1px solid #f8fafc !important;
+  background-color: inherit !important;
+  color: #f8fafc !important;
+  box-shadow: none !important;
+  width: 280px !important;
+}
+@media screen and (min-width: 768px) {
+  .input-container .input-phone {
+    width: 410px !important;
+  }
+}
+
+.input-container .input-phone:focus,
+input:focus {
+  outline: 1px solid black !important;
+  outline-offset: -3px;
+}
+
+.input-container .input-phone-error {
+  border: 1px solid #fb923c !important;
+  color: #fb923c !important;
+}
+
+.input-container .input-drop {
+  width: 0;
+}
+
+.input-container .input-drop .selected-flag {
+  width: 80px;
+  padding-left: 24px;
+}
+
+.input-container .input-drop .flag {
+  transform: scale(1.2);
+}
+
+.input-container .selected-flag:focus:before,
+.input-container .selected-flag.open:before {
+  outline: 1px solid black !important;
+  outline-offset: -3px;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.input-container .input-drop .arrow {
+  visibility: hidden;
+}
+
+.input-container .input-drop .arrow::before {
+  visibility: visible;
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  transition: transform 200ms ease-in-out;
+
+  border-left: 2px solid #f8fafc;
+  border-bottom: 2px solid #f8fafc;
+  border-bottom-left-radius: 3px;
+  transform: rotate(-45deg);
+}
+
+.input-container .input-drop .arrow.up::before {
+  transform: rotate(135deg);
+  top: -0px;
+}

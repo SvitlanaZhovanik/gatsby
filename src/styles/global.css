@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+ul,
+ol,
+li {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  @apply text-bb2833 md:text-bbTitle1 lg:text-bbTitle1 font-heads font-bold;
+}
+
+p {
+  @apply text-bb1622 font-main font-medium lg:text-bb2030 tracking-[0.02em];
+}
+
+ul {
+  padding-left: 0;
+}
+
+img,
+a,
+button {
+  display: block;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f8fafc;
+  width: 100vw;
+  overflow-x: hidden;
+  cursor: default;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* Custom styles */
+@layer utilities {
+  .line-hidden:last-child > .peer {
+    display: none;
+  }
+  .hero-expirience-line:nth-child(-n + 3) {
+    padding-bottom: 32px;
+  }
+  .socialIcon-item:last-child {
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  .footer-item:first-child {
+    margin-right: 56px;
+  }
+  .footer-item:nth-child(2) {
+    margin-right: 44px;
+  }
+}
+
+/* gradients */
+
+.gradient1 {
+  background: linear-gradient(
+    180deg,
+    #2bb9c7 0%,
+    rgba(243, 140, 56, 0.7) 42.02%,
+    rgba(252, 166, 100, 0.85) 62.51%,
+    rgba(252, 172, 110, 0.9) 79.84%,
+    rgba(236, 190, 158, 0.947826) 94.3%,
+    #f2d8b5 100.85%
+  );
+}
+
+.gradient2 {
+  background: linear-gradient(
+    180deg,
+    #2bb9c7 4%,
+    rgba(251, 146, 60, 0.5) 27.56%,
+    rgba(243, 181, 133, 0.9) 63.58%,
+    rgba(239, 204, 180, 0.95) 86.74%,
+    #e2dcde 101%
+  );
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0.3;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.non-active-link::after {
+  transform: translateX(102%);
+}
+
+.fade-in {
+  animation-name: fadein;
+  animation-duration: 250ms;
+  animation-timing-function: linear;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-out {
+  animation-name: fadeout;
+  animation-duration: 250ms;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.clamp-lines {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10;
+  overflow: hidden;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  opacity: 0;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
